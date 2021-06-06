@@ -27,12 +27,16 @@ create Table Products
 )
 
 
+
 insert into Products(PRDT_Name, Supplier, PRDT_Price) 
 Values
 ('KEROSINE', 'KENOL KOBIL Co', '100'),
 ('DISEL', 'SHELL Ke', '150'),
 ('PETROL', 'TOTAL Ke', '200')
 
+insert into Products(PRDT_Name, Supplier, PRDT_Price) 
+Values
+('OIL', 'SHANKAN ENTERPRICES LIMITED', '300')
 
 select * from Products
 
