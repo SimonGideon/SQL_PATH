@@ -38,7 +38,6 @@ insert into Products(PRDT_Name, Supplier, PRDT_Price)
 Values
 ('OIL', 'SHANKAN ENTERPRICES LIMITED', '300')
 
-select * from Products
 
 create Table Orders
 (
