@@ -62,3 +62,5 @@ Values
 ('KENPOL', 'KEROSINE', '45000')
 
 select * from Orders
+
+
