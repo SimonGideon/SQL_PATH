@@ -63,4 +63,64 @@ Values
 
 select * from Orders
 
+select * from Orders where PRODUCT ='KEROSINE'
+select * from Orders where LITERS<40000
+select * from Orders where LITERS<=20000
+select * from Orders where LITERS!=40000
+select * from Orders where LITERS BETWEEN 40000 and 50000
 
+select * from Oil_marketers where MKTR_Middle_Name like 'MOSES'
+select * from Orders where BUYER='TATA KENYA'
+select * from Orders where PRODUCT='DISEL' OR PRODUCT='KEROSINE'
+select * from Orders
+order by BUYER, ORDER_No DESC
+
+
+Insert into Orders(BUYER, LITERS)
+values('KERIO TRADERS', '230000')
+
+
+
+insert into Orders(PRODUCT)
+values('PETROL')
+update Orders
+set BUYER='SHELL KENYA', LITERS='330000'
+where ORDER_No=6900237
+
+update Orders
+set PRODUCT='OIL'
+where ORDER_No=6354772
+
+select * from Orders
+where BUYER LIKE  '%a' /* for the values that starts with 'a'*/
+
+select * from Orders
+where BUYER LIKE  '%C%'/*The value that has any place 'C'*/
+
+select * from Orders
+where BUYER LIKE  '_a%'/*The valus that has 'a' as the second letter*/
+
+select * from Orders
+where BUYER LIKE 'a_%' /*The first value that starts with 'a' atleast two characters in lenght*/
+
+select * from Orders
+where BUYER LIKE 'a__%' /*The first value that starts with 'a' atleast two characters in length */
+
+select * from Orders
+where BUYER LIKE 'c%s' /*The value that starts with c and ends with s */
+
+
+
+insert into Products(PRDT_Name, Supplier, PRDT_Price)
+Values
+('GAS', 'KENOL KOBIL Co', '900')
+
+select * from Products
+where PRDT_Name IN ('GAS', 'KEROSINE', 'PETROL');
+
+select * from Products
+where PRDT_Price BETWEEN 100 AND 1000;
+
+select * from Products
+
+select * from Orders
