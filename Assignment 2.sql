@@ -16,4 +16,14 @@ Values
 ('BCOM', 'Jane', 'BCOM', '0712369652', 'Meru'),
 ('BED/145(SB)', 'Peter', 'BED', '0174569325', 'Nairobi')
 
+delete from Student where [Student Name]='Mary'
+
+update Student
+set Telno='020456369',
+Degree='BCS Computer SCience'
+where [Student ID]= 'MED/389'
+
+
+
+r
 
